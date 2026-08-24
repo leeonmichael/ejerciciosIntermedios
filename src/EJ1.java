@@ -18,9 +18,7 @@ public class EJ1 {
 
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-            WebElement campoTexto = wait.until(
-                    ExpectedConditions.visibilityOfElementLocated(By.name("my-text"))
-            );
+            WebElement campoTexto = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("my-text")));
 
             campoTexto.sendKeys("Maycol y Kevin");
 
